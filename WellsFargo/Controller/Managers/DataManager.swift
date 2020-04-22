@@ -15,24 +15,17 @@ let arrayKey = "EventArrayKey"
 class DataManager:NSObject {
 
   static func storeEvent(event:Event) {
-    if let events = retrieveAllEvents() {
-      var mutableEvents = events
-      mutableEvents.append(event)
-      
-      UserDefaults.standard.set(mutableEvents, forKey: arrayKey)
-    } else {
-      print("Error saving event")
-    }
+    let events = retrieveAllEvents()
+    var mutableEvents = events
+    mutableEvents.append(event)
+
+    UserDefaults.standard.set(mutableEvents, forKey: arrayKey)
   }
 
-
-  static func retrieveAllEvents() -> [Event]? {
-
+  static func retrieveAllEvents() -> [Event] {
     guard let events:[Event] = UserDefaults.standard.array(forKey: arrayKey) as? [Event] else {
-      print("Error retrieving events")
-      return nil
+      return []
     }
-
     return events
   }
 

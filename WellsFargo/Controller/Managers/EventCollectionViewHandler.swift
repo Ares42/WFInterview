@@ -15,8 +15,7 @@ class EventCollectionViewDataSource:NSObject {
   init(events:[Event]) {
     self.events = events
   }
-  
-  
+
 }
 
 extension EventCollectionViewDataSource: UICollectionViewDataSource {
@@ -50,6 +49,4 @@ extension EventCollectionViewDataSource: UICollectionViewDataSource {
     return cell
   }
 
-  
-  
 }

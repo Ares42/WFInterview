@@ -11,8 +11,6 @@ import UIKit
 
 class CalendarTimeCell:UICollectionViewCell {
 
-
   @IBOutlet weak var timeLabel:UILabel!
-
 
 }

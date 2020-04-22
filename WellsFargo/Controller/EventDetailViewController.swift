@@ -17,9 +17,14 @@ class EventDetailViewController: UIViewController {
   @IBOutlet weak var appointmentCollectionView:UICollectionView!
 
 
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    monthLabel.text = String(Calendar.current.component(.month, from: Date()))
   }
 
 }
@@ -29,7 +34,6 @@ extension EventDetailViewController:UICollectionViewDataSource {
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
 
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DateCell", for: indexPath)
 

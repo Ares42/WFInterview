@@ -24,7 +24,7 @@ class EventsViewController: UIViewController {
     // Do any additional setup after loading the view.
 
     let eventCollectionViewDataSource = EventCollectionViewDataSource(
-      events: DataManager.retrieveAllEvents()!
+      events: DataManager.retrieveAllEvents()
     )
     collectionView.dataSource = eventCollectionViewDataSource
   }

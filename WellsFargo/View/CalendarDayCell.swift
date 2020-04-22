@@ -11,11 +11,7 @@ import UIKit
 
 class CalendarDayCell:UICollectionViewCell {
 
-  @IBOutlet weak var monthLabel:UILabel!
+  @IBOutlet weak var dayOfTheWeekLabel:UILabel!
   @IBOutlet weak var dayLabel:UILabel!
-
-
-
-
 
 }
