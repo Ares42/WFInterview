@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C164F1AE244FDC4900091103 /* CalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164F1AD244FDC4900091103 /* CalendarDayCell.swift */; };
+		C164F1B0244FDC5600091103 /* CalendarTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C164F1AF244FDC5600091103 /* CalendarTimeCell.swift */; };
+		C1BF2D78244F95F1000DEBD2 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF2D77244F95F0000DEBD2 /* EventDetailView.swift */; };
+		C1BF2D7A244F96D9000DEBD2 /* CalendarCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF2D79244F96D9000DEBD2 /* CalendarCarouselView.swift */; };
+		C1BF2D7C244FC91D000DEBD2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF2D7B244FC91D000DEBD2 /* DataManager.swift */; };
+		C1D69023244FDB67008E2208 /* CalendarCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D69022244FDB67008E2208 /* CalendarCollectionViewDataSource.swift */; };
 		D5DA99FA244CE1310048E20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA99F9244CE1310048E20F /* AppDelegate.swift */; };
 		D5DA99FC244CE1310048E20F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA99FB244CE1310048E20F /* SceneDelegate.swift */; };
 		D5DA99FE244CE1310048E20F /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DA99FD244CE1310048E20F /* EventsViewController.swift */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C164F1AD244FDC4900091103 /* CalendarDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDayCell.swift; sourceTree = "<group>"; };
+		C164F1AF244FDC5600091103 /* CalendarTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTimeCell.swift; sourceTree = "<group>"; };
+		C1BF2D77244F95F0000DEBD2 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		C1BF2D79244F96D9000DEBD2 /* CalendarCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCarouselView.swift; sourceTree = "<group>"; };
+		C1BF2D7B244FC91D000DEBD2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C1D69022244FDB67008E2208 /* CalendarCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		D5DA99F6244CE1300048E20F /* WellsFargo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellsFargo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5DA99F9244CE1310048E20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5DA99FB244CE1310048E20F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +69,7 @@
 		D5DA9A20244CE1360048E20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5DA9A2F244CE1D60048E20F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D5DA9A31244CE2E60048E20F /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
-		D5DA9A33244CE5290048E20F /* EventCollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventCollectionViewHandler.swift; path = WellsFargo/EventCollectionViewHandler.swift; sourceTree = SOURCE_ROOT; };
+		D5DA9A33244CE5290048E20F /* EventCollectionViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventCollectionViewHandler.swift; path = WellsFargo/Controller/Managers/EventCollectionViewHandler.swift; sourceTree = SOURCE_ROOT; };
 		D5DA9A35244D33530048E20F /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1D69021244FD357008E2208 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C1BF2D7B244FC91D000DEBD2 /* DataManager.swift */,
+				D5DA9A33244CE5290048E20F /* EventCollectionViewHandler.swift */,
+				C1D69022244FDB67008E2208 /* CalendarCollectionViewDataSource.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		D5DA99ED244CE1300048E20F = {
 			isa = PBXGroup;
 			children = (
@@ -144,10 +166,9 @@
 		D5DA9A2C244CE1B50048E20F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D5DA9A33244CE5290048E20F /* EventCollectionViewHandler.swift */,
 				D5DA99FD244CE1310048E20F /* EventsViewController.swift */,
+				C1D69021244FD357008E2208 /* Managers */,
 				D5DA9A31244CE2E60048E20F /* EventDetailViewController.swift */,
-				D5DA9A35244D33530048E20F /* EventCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -155,6 +176,11 @@
 		D5DA9A2D244CE1BC0048E20F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D5DA9A35244D33530048E20F /* EventCell.swift */,
+				C164F1AD244FDC4900091103 /* CalendarDayCell.swift */,
+				C164F1AF244FDC5600091103 /* CalendarTimeCell.swift */,
+				C1BF2D77244F95F0000DEBD2 /* EventDetailView.swift */,
+				C1BF2D79244F96D9000DEBD2 /* CalendarCarouselView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,12 +324,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C164F1AE244FDC4900091103 /* CalendarDayCell.swift in Sources */,
+				C1BF2D7A244F96D9000DEBD2 /* CalendarCarouselView.swift in Sources */,
+				C1D69023244FDB67008E2208 /* CalendarCollectionViewDataSource.swift in Sources */,
 				D5DA9A32244CE2E60048E20F /* EventDetailViewController.swift in Sources */,
 				D5DA9A34244CE5290048E20F /* EventCollectionViewHandler.swift in Sources */,
 				D5DA99FE244CE1310048E20F /* EventsViewController.swift in Sources */,
 				D5DA9A04244CE1310048E20F /* WellsFargo.xcdatamodeld in Sources */,
 				D5DA9A36244D33530048E20F /* EventCell.swift in Sources */,
+				C1BF2D78244F95F1000DEBD2 /* EventDetailView.swift in Sources */,
 				D5DA99FA244CE1310048E20F /* AppDelegate.swift in Sources */,
+				C164F1B0244FDC5600091103 /* CalendarTimeCell.swift in Sources */,
+				C1BF2D7C244FC91D000DEBD2 /* DataManager.swift in Sources */,
 				D5DA99FC244CE1310048E20F /* SceneDelegate.swift in Sources */,
 				D5DA9A30244CE1D60048E20F /* Event.swift in Sources */,
 			);
@@ -479,8 +511,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TK8Q4KD6G;
+				DEVELOPMENT_TEAM = R755VAJS54;
 				INFOPLIST_FILE = WellsFargo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Terrace.WellsFargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -497,8 +530,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TK8Q4KD6G;
+				DEVELOPMENT_TEAM = R755VAJS54;
 				INFOPLIST_FILE = WellsFargo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,7 +540,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Terrace.WellsFargo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
